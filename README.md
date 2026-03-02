@@ -110,4 +110,5 @@ Feel free to explore the code, customize the styles, or add new features like sc
 Tanmay Kadam
 
 Software Developer | JavaScript Enthusiast
+
 GitHub: [tkadam99]
