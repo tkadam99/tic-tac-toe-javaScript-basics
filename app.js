@@ -43,9 +43,11 @@ function handleBoxClick(index) {
 
     // Update the box with the current player's symbol and switch turns
     if (currentPlayer === 'X') {
+        box.style.color = 'red';
         box.innerText = 'X';
         currentPlayer = 'O';
     } else {
+        box.style.color = 'blue';
         box.innerText = 'O';
         currentPlayer = 'X';
     }
