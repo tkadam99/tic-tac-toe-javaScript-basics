@@ -71,3 +71,42 @@ tic-tac-toe-javaScript-basics/
 
 * During gameplay:
     *"Reset Game" is available
+
+
+### 🛠️ **Tech Stack**
+
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+
+
+### 🚀 **Getting Started**
+1. Clone the repository:
+
+```bash
+git clone https://github.com/tkadam99/tic-tac-toe-javaScript-basics.git
+```
+
+2. Open `index.html` in your web browser to play the game.
+
+### 🎉 **Enjoy Playing!**
+
+Feel free to explore the code, customize the styles, or add new features like score tracking or AI opponents!
+
+### **Future Enhancements**
+
+* Highlight winning pattern
+
+* Add sounds for moves and win/draw
+
+* Add Scoreboard to track wins
+
+* Implement AI opponent for single-player mode
+
+* Add animations for moves and win/draw
+
+
+### **Author**
+Tanmay Kadam
+Software Developer | JavaScript Enthusiast
+GitHub: [tkadam99]
