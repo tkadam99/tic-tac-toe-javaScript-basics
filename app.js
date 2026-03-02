@@ -20,6 +20,11 @@ const winningConditions = [
 ];
 
 function handleBoxClick(index) { 
+
+    if (!gameActive) {
+        return;
+    }
+
     const box = boxes[index]
     if (currentPlayer === 'X') {
         box.innerText = 'X';
@@ -49,14 +54,23 @@ const checkWin = () => {
 
         // console.log(boxes[a].innerText, boxes[b].innerText, boxes[c].innerText);
 
-        if (boxA != '' || boxB != '' || boxC != '') {
+        if (boxA !== '' && boxB !== '' && boxC !== '') {
             if (boxA && boxA === boxB && boxA === boxC) {
                 // alert(`Player ${boxA} wins!`);
                 gameActive = false;
                 showWinner(boxA);
-                // return;
+                resetButton.classList.add('hide');
+                return;
             }
         }   
+    }
+
+    let allFilled = [...boxes].every(box => box.innerText != '');
+    if (allFilled && gameActive) {
+        message.innerText = "It's a draw!";
+        messageContainer.classList.remove('hide');
+        resetButton.classList.add('hide');
+        gameActive = false;
     }
 }
 
@@ -73,6 +87,8 @@ newGameButton.addEventListener('click', () => {
         box.disabled = false;
     });
     messageContainer.classList.add('hide');
+    message.innerText = '';
+    resetButton.classList.remove('hide');
     currentPlayer = 'X';
     gameActive = true;
 });
@@ -82,6 +98,9 @@ resetButton.addEventListener('click', () => {
         box.innerText = '';
         box.disabled = false;
     });
+    messageContainer.classList.add('hide');
+    message.innerText = '';
+    resetButton.classList.remove('hide');
     currentPlayer = 'X';
     gameActive = true;
 }); 
