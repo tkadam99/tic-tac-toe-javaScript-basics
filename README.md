@@ -43,13 +43,14 @@ and UI state management.
 
 ### 📂 **Folder Structure**
 
+```bash
 tic-tac-toe-javaScript-basics/
 │
 ├── index.html
 ├── style.css
 ├── app.js
 └── assets/   (optional for images, icons, sounds)
-
+```
 
 
 ### 🕹️**How to Play**
@@ -61,17 +62,12 @@ tic-tac-toe-javaScript-basics/
 * Players alternate turns automatically.
 
 * The game ends when:
-
-A player wins
-
-All boxes are filled (draw)
+    * A player wins
+    * All boxes are filled (draw)
 
 * After the game:
+    * "Play Again" appears
+    * "Reset Game" is hidden
 
-"Play Again" appears
-
-"Reset Game" is hidden
-
-During gameplay:
-
-"Reset Game" is available
+* During gameplay:
+    *"Reset Game" is available
